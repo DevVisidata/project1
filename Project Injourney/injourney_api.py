@@ -12,7 +12,7 @@ def index():
     if request.method == 'POST':
         try:
             api_key = request.headers['api_key']
-            if api_key == 'secret':
+            if api_key == 'jugldrnjuglfitnf':
                 print(request.json)
                 id_cluster = request.json['id_cluster']
                 cluster = request.json['cluster']
@@ -44,7 +44,7 @@ def index():
     if request.method == 'GET':
         try:
             api_key = request.headers['api_key']
-            if api_key == 'secret':
+            if api_key == 'jugldrnjuglfitnf':
                 cursor = conn.cursor()
                 cursor.execute('SELECT * FROM production')
                 data = cursor.fetchall()
